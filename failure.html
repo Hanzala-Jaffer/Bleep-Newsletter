@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleep Newsletter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <h1 class="text-body-emphasis">Oops!</h1>
+    <p class="lead">
+        There was an error while signing up for the newsletter. Please try again later.
+    </p>
+    <!-- Doesn't work: 
+    <a href="./signup.html"><button type="button" class="btn btn-lg btn-w">Try Again</button></a> -->
+    <form action="/failure" method="post">
+      <button type="submit" class="btn btn-lg btn-warning" name="submit">Try Again</button>
+    </form>
+  </div>
+</body>
+
+</html>
